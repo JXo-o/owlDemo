@@ -1,4 +1,6 @@
 import os
+from rdflib import Graph, Namespace
+from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
 
 from util.util import MyUtil
 from ner.ner_util import NERUtil
@@ -30,5 +32,10 @@ def main():
     ConvertToRule.convert()
 
 
+def main1():
+    ns = Namespace("http://example.org/standards#")
+    print(getattr(ns, "xml"))
+
+
 if __name__ == "__main__":
-    main()
+    main1()

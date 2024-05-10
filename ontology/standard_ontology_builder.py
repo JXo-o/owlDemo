@@ -21,20 +21,21 @@ class StandardOntology:
     @staticmethod
     def merge_tbox_abox(t_path=os.path.join("owl", "ontology.owl"),
                         a_path=os.path.join("owl", "data.owl"),
-                        o_path=os.path.join("owl", "final.owl")):
+                        o_path=os.path.join("owl", "final.owl"),
+                        rformat="xml"):
         tbox = Graph()
-        tbox.parse(t_path, format="xml")
+        tbox.parse(t_path, rformat)
         abox = Graph()
-        abox.parse(a_path, format="xml")
+        abox.parse(a_path, rformat)
         kg = tbox + abox
-        kg.serialize(o_path, format="xml")
+        kg.serialize(o_path, rformat)
         print("融合本体和数据后的图谱已存至" + str(o_path))
 
-    def _insert_property(self, key, key_type, key_domain, key_range, owl_type=OWL.topObjectProperty):
+    def _insert_property(self, key, key_type, key_domain, key_range, parent=OWL.topObjectProperty):
         self.g.add((key, RDF.type, key_type))
         self.g.add((key, RDFS.domain, key_domain))
         self.g.add((key, RDFS.range, key_range))
-        self.g.add((key, RDFS.subPropertyOf, owl_type))
+        self.g.add((key, RDFS.subPropertyOf, parent))
 
     def _namespace_bind(self):
         self.g.bind("owl", OWL)
@@ -44,7 +45,7 @@ class StandardOntology:
         self.g.bind("foaf", FOAF)
         self.g.bind("", self.ns)
 
-    def _serialise(self, save_url=None, is_print=False, save_format="xml"):
+    def _serialise(self, save_url=None, save_format=None, is_print=False):
         res = self.g.serialize(destination=save_url, format=save_format)
         if is_print:
             print(res)
