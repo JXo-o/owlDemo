@@ -1,0 +1,17 @@
+#####CLASS#####
+
+StandardRelevant
+- Component
+- Property
+- Constraint
+-- NumericalConstraint
+-- SpatialConstraint
+
+###PROPERTYS###
+
+NumericalConstraint#threshold
+Component#hasProperty#Property
+Property#btoComponent#Component 
+SpatialConstraint#hasThreshold#Component
+Property#meetsNumericConstraint#NumericalConstraint
+Component#meetsSpatialConstraint#Component
