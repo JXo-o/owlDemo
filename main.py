@@ -13,7 +13,7 @@ def main():
     # 命名实体识别部分，示例
     ner_util = NERUtil()
     ner_util.train_model()
-    label_list = MyUtil.correct_labels(MyUtil.print_label(ner_util, os.path.join("data", "label")))
+    label_list = MyUtil.correct_labels(MyUtil.print_label(ner_util))
 
     # 标准规范本体生成，示例
     ontology = StandardOntology()
@@ -38,4 +38,4 @@ def main1():
 
 
 if __name__ == "__main__":
-    main1()
+    main()

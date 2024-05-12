@@ -4,9 +4,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://example.org/standards#StandardRelevant">
+  <rdf:Description rdf:about="http://example.org/standards#Constraint">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/standards#StandardRelevant"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/standards#hasProperty">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -14,6 +14,21 @@
     <rdfs:range rdf:resource="http://example.org/standards#Property"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     <owl:inverseOf rdf:resource="http://example.org/standards#btoComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/standards#Property">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/standards#StandardRelevant"/>
+    <owl:disjointWith rdf:resource="http://example.org/standards#Constraint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/standards#StandardRelevant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/standards#hasThreshold">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/standards#SpatialConstraint"/>
+    <rdfs:range rdf:resource="http://example.org/standards#Component"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/standards#meetsSpatialConstraint">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -27,16 +42,16 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/standards#meetsNumericConstraint">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/standards#Property"/>
-    <rdfs:range rdf:resource="http://example.org/standards#NumericalConstraint"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/standards#Property">
+  <rdf:Description rdf:about="http://example.org/standards#Component">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://example.org/standards#StandardRelevant"/>
+    <owl:disjointWith rdf:resource="http://example.org/standards#Property"/>
     <owl:disjointWith rdf:resource="http://example.org/standards#Constraint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/standards#NumericalConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/standards#Constraint"/>
+    <owl:disjointWith rdf:resource="http://example.org/standards#SpatialConstraint"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/standards#btoComponent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -44,26 +59,11 @@
     <rdfs:range rdf:resource="http://example.org/standards#Component"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/standards#hasThreshold">
+  <rdf:Description rdf:about="http://example.org/standards#meetsNumericConstraint">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/standards#SpatialConstraint"/>
-    <rdfs:range rdf:resource="http://example.org/standards#Component"/>
+    <rdfs:domain rdf:resource="http://example.org/standards#Property"/>
+    <rdfs:range rdf:resource="http://example.org/standards#NumericalConstraint"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/standards#NumericalConstraint">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://example.org/standards#Constraint"/>
-    <owl:disjointWith rdf:resource="http://example.org/standards#SpatialConstraint"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/standards#Component">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://example.org/standards#StandardRelevant"/>
-    <owl:disjointWith rdf:resource="http://example.org/standards#Property"/>
-    <owl:disjointWith rdf:resource="http://example.org/standards#Constraint"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/standards#Constraint">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://example.org/standards#StandardRelevant"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/standards#SpatialConstraint">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>

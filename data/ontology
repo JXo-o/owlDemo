@@ -1,13 +1,13 @@
-#####CLASS#####
+###CLASS
 
 StandardRelevant
-- Component
-- Property
-- Constraint
--- NumericalConstraint
--- SpatialConstraint
+StandardRelevant#Component
+StandardRelevant#Property
+StandardRelevant#Constraint
+Constraint#NumericalConstraint
+Constraint#SpatialConstraint
 
-###PROPERTYS###
+###PROPERTIES
 
 NumericalConstraint#threshold
 Component#hasProperty#Property

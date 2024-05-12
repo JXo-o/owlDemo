@@ -1,5 +1,6 @@
 from rdflib import Graph, Namespace
 from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
+from ontology.ontology_builder import Ontology
 import os
 
 
@@ -116,3 +117,8 @@ class StandardOntology:
         self.g.add((self.ns.Component, OWL.disjointWith, self.ns.Constraint))
         self.g.add((self.ns.Property, OWL.disjointWith, self.ns.Constraint))
         self.g.add((self.ns.NumericalConstraint, OWL.disjointWith, self.ns.SpatialConstraint))
+
+    @staticmethod
+    def build_logic():
+        ontology_builder = Ontology()
+        ontology_builder.build_ontology()

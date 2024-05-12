@@ -3,7 +3,7 @@ import os
 
 class MyUtil:
     @staticmethod
-    def parse_file(file_path):
+    def read_file(file_path):
         lines = []
         with open(file_path, 'r', encoding='utf-8') as file:
             for line in file:
@@ -18,7 +18,7 @@ class MyUtil:
 
     @staticmethod
     def print_label(ner_util, file_path=os.path.join("data", "input")):
-        sentences = MyUtil.parse_file(file_path)
+        sentences = MyUtil.read_file(file_path)
         sentences = [
             sentence.split() if MyUtil.check_list_elements(sentences) else MyUtil.parse_sentence(ner_util, sentence) for
             sentence in sentences]
@@ -63,3 +63,19 @@ class MyUtil:
                 print("无效的输入格式，请输入三个值，用空格分隔。")
 
         return label_list
+
+    @staticmethod
+    def parse_ontology(file_path, key):
+        results = []
+        start = False
+        with open(file_path, 'r') as file:
+            for line in file:
+                if line.startswith("###" + key):
+                    start = True
+                    continue
+                if start:
+                    if line.startswith("###"):
+                        break
+                    results.append(line.strip())
+        return results
+
