@@ -3,24 +3,11 @@ from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
 import os
 
 
-class StandardDataInsert:
-    def __init__(self):
-        self.g = Graph()
-        # 创建一个命名空间
-        self.ns = Namespace("http://example.org/standards#")
+class DataInsert:
+    def __init__(self, path, rformat):
 
-    def _namespace_bind(self):
-        self.g.bind("owl", OWL)
-        self.g.bind("xsd", XSD)
-        self.g.bind("rdf", RDF)
-        self.g.bind("rdfs", RDFS)
-        self.g.bind("foaf", FOAF)
-        self.g.bind("", self.ns)
-
-    def _serialise(self, save_url=None, is_print=False, save_format="xml"):
-        res = self.g.serialize(destination=save_url, format=save_format)
-        if is_print:
-            print(res)
+        self.g = Graph().parse(path, rformat)
+        self.ns = Namespace(self.g.store.namespace(""))
 
     # 插入不同类实例
     def _insert_instance(self, key, instance, data=None):
@@ -72,8 +59,7 @@ class StandardDataInsert:
 
     # 保存图谱abox
     def save_file(self, save_url=os.path.join("owl", "data.owl"), save_format="xml"):
-        self._namespace_bind()
-        self._serialise(save_url=save_url, save_format=save_format)
+        self.g.serialize(save_url, save_format)
         print("图谱abox数据部分已存至" + str(save_url))
 
     def test(self, save_url=os.path.join("owl", "data.owl"), save_format="xml"):

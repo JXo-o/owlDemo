@@ -1,11 +1,7 @@
-import os
-from rdflib import Graph, Namespace
-from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
-
 from util.util import MyUtil
 from ner.ner_util import NERUtil
-from ontology.standard_data_insert import StandardDataInsert
-from ontology.standard_ontology_builder import StandardOntology
+from ontology.data_insert import DataInsert
+from ontology.standard_builder import StandardOntology
 from ontology.convert_to_rule import ConvertToRule
 
 
@@ -17,10 +13,10 @@ def main():
 
     # 标准规范本体生成，示例
     ontology = StandardOntology()
-    ontology.create_ontology()
+    ontology.build_logic()
 
     # 知识图谱abox生成，示例
-    data_insert = StandardDataInsert()
+    data_insert = DataInsert()
     for element in label_list:
         data_insert.insert_data(element)
     data_insert.save_file()
@@ -33,9 +29,10 @@ def main():
 
 
 def main1():
-    ns = Namespace("http://example.org/standards#")
-    print(getattr(ns, "xml"))
+    # 标准规范本体生成，示例
+    ontology = StandardOntology()
+    ontology.build_logic()
 
 
 if __name__ == "__main__":
-    main()
+    main1()

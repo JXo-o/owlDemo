@@ -76,6 +76,7 @@ class MyUtil:
                 if start:
                     if line.startswith("###"):
                         break
-                    results.append(line.strip())
+                    if len(line.strip()):
+                        results.append(line.strip())
         return results
 
