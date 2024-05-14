@@ -5,7 +5,7 @@ import os
 class ConvertToRule:
 
     @staticmethod
-    def convert(kg_path=os.path.join("owl", "final.owl")):
+    def convert(kg_path=os.path.join("owl", "standard_final.owl")):
         kg = Graph()
         kg.parse(kg_path, format="xml")
 
@@ -82,7 +82,7 @@ class ConvertToRule:
                 file.write(f"{key}:{value}\n")
 
     @staticmethod
-    def read_mapping_from_file(filename=os.path.join("data", "mapping")):
+    def read_mapping_from_file(filename=os.path.join("data", "jena_mapping")):
         mapping = {}
         with open(filename, 'r', encoding='utf-8') as file:
             lines = file.readlines()
@@ -92,7 +92,7 @@ class ConvertToRule:
         return mapping
 
     @staticmethod
-    def save_rules(rules, output_path=os.path.join("data", "output")):
+    def save_rules(rules, output_path=os.path.join("data", "jena_output")):
         with open(output_path, 'w', encoding='utf-8') as file:
             for rule in rules:
                 file.write(str(rule) + '\n')

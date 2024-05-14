@@ -1,13 +1,16 @@
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
+from util.util import MyUtil
 import os
 
 
 class DataInsert:
-    def __init__(self, path, rformat):
+    def __init__(self):
 
-        self.g = Graph().parse(path, rformat)
-        self.ns = Namespace(self.g.store.namespace(""))
+        self.g = Graph()
+        self.ns = Namespace(MyUtil.parse_ontology(os.path.join("data", "standard_ontology"), "NAMESPACE")[0])
+        self.output_path = os.path.join("owl", "standard_data.owl")
+        self.output_format = "xml"
 
     # 插入不同类实例
     def _insert_instance(self, key, instance, data=None):
@@ -50,6 +53,7 @@ class DataInsert:
 
     # 以列表形式插入数据
     def insert_data(self, label):
+        print(label)
         self._insert_instance(self.ns.Component, label[0])
         self._insert_instance(self.ns.Property, label[1])
         self._insert_instance(self.ns.NumericalConstraint, label[2], label[3])
@@ -58,10 +62,10 @@ class DataInsert:
         self._insert_property(label[1], label[2], self.ns.meetsNumericConstraint)
 
     # 保存图谱abox
-    def save_file(self, save_url=os.path.join("owl", "data.owl"), save_format="xml"):
-        self.g.serialize(save_url, save_format)
-        print("图谱abox数据部分已存至" + str(save_url))
+    def save_file(self):
+        self.g.serialize(self.output_path, self.output_format)
+        print("图谱abox数据部分已存至" + str(self.output_path))
 
-    def test(self, save_url=os.path.join("owl", "data.owl"), save_format="xml"):
+    def test(self):
         self.insert_data(["泄水孔", "直径", "不小于", "50mm"])
-        self.save_file(save_url, save_format)
+        self.save_file()

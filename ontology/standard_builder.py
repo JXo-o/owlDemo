@@ -5,25 +5,23 @@ import os
 
 class StandardOntology:
 
-    @staticmethod
-    def merge_tbox_abox(t_path=os.path.join("owl", "ontology.owl"),
-                        a_path=os.path.join("owl", "data.owl"),
-                        o_path=os.path.join("owl", "final.owl"),
-                        rformat="xml"):
+    def __init__(self, input_path, output_path, output_format="xml"):
 
-        Ontology.merge_kg(t_path, a_path).serialize(o_path, rformat)
-        print("融合本体和数据后的图谱已存至" + str(o_path))
+        self.input_path = input_path
+        self.output_path = output_path
+        self.output_format = output_format
 
-    @staticmethod
-    def build_logic(save_url=os.path.join("owl", "ontology.owl"), save_format="xml"):
-        ontology_builder = Ontology()
+    def build_logic(self):
+
+        ontology_builder = Ontology(self.input_path)
         ontology_builder.build_ontology()
 
         # ontology_builder.add_triple("Component", OWL.disjointWith, "Property")
         # ontology_builder.add_triple("Component", OWL.disjointWith, "Constraint")
         # ontology_builder.add_triple("Property", OWL.disjointWith, "Constraint")
         # ontology_builder.add_triple("NumericalConstraint", OWL.disjointWith, "SpatialConstraint")
-
         ontology_builder.add_triple("hasProperty", OWL.inverseOf, "btoComponent")
-        Ontology.serialise(ontology_builder.get_kg(), save_url, save_format)
-        print("标准规范本体已存至" + str(save_url))
+
+        Ontology.serialise(ontology_builder.get_kg(), self.output_path, self.output_format)
+
+        print("标准规范本体已存至" + str(self.output_path))

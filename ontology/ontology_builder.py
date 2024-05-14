@@ -1,16 +1,15 @@
-from rdflib import Graph, Namespace, URIRef, Literal
+from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
 from util.util import MyUtil
-import os
 
 
 class Ontology:
 
-    def __init__(self):
+    def __init__(self, input_path):
 
         self.g = Graph()
         self.ns = None
-        self._namespace_bind()
+        self.input_path = input_path
 
     def _create_class(self, c_name, parent=OWL.Thing):
 
@@ -57,29 +56,28 @@ class Ontology:
 
     def set_namespace(self, namespace):
 
-        self.ns = namespace
+        self.ns = Namespace(namespace)
+        self._namespace_bind()
 
     def parse_ontology(self, rpath, rformat):
 
         self.g.parse(rpath, rformat)
         self.ns = Namespace(self.g.store.namespace(""))
 
-    def build_ontology(self, path=os.path.join("data", "ontology")):
+    def build_ontology(self):
 
-        util = MyUtil()
-        ns = util.parse_ontology(path, "NAMESPACE")
-        clazz = util.parse_ontology(path, "CLASS")
-        properties = util.parse_ontology(path, "PROPERTIES")
+        ns = MyUtil.parse_ontology(self.input_path, "NAMESPACE")
+        clazz = MyUtil.parse_ontology(self.input_path, "CLASS")
+        properties = MyUtil.parse_ontology(self.input_path, "PROPERTIES")
         self.set_namespace(ns[0])
+        print(Namespace(self.g.store.namespace("")))
 
         for c in clazz:
             c_lst = c.split("#")[::-1]
-            print(c_lst)
             self._create_class(*c_lst)
 
         for p in properties:
             p_lst = p.split("#")
-            print(p_lst)
             if len(p_lst) == 2:
                 self._create_property(p_lst[1], OWL.DatatypeProperty, p_lst[0], XSD.string, OWL.topDataProperty)
             else:
@@ -92,13 +90,15 @@ class Ontology:
         return self.g
 
     @staticmethod
-    def merge_kg(*paths, rformat="xml"):
+    def merge_kg(*paths, namespace, rformat="xml"):
 
-        kg = Graph()
+        merged_kg = Graph()
+
         for path in paths:
-            kg += Graph().parse(path, rformat)
+            merged_kg += Graph().parse(path, rformat)
 
-        return kg
+        merged_kg.bind("", namespace)
+        return merged_kg
 
     @staticmethod
     def serialise(kg, save_url=None, save_format=None, is_print=False):

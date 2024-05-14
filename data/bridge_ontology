@@ -1,0 +1,20 @@
+@@@2024-05-14 21:12:58
+###NAMESPACE
+
+http://example.org/bridge#
+
+###CLASS
+
+InfoRelevant
+InfoRelevant#Component
+BridgeRelevant
+BridgeRelevant#泄水孔
+BridgeRelevant#栏杆
+BridgeRelevant#混凝土
+
+###PROPERTIES
+
+Component#equalsTo#Component
+泄水孔#直径
+栏杆#高度
+混凝土#强度

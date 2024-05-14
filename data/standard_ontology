@@ -10,6 +10,8 @@ StandardRelevant#Property
 StandardRelevant#Constraint
 Constraint#NumericalConstraint
 Constraint#SpatialConstraint
+InfoRelevant
+InfoRelevant#EquivalentComponent
 
 ###PROPERTIES
 
@@ -19,3 +21,4 @@ Property#btoComponent#Component
 SpatialConstraint#hasThreshold#Component
 Property#meetsNumericConstraint#NumericalConstraint
 Component#meetsSpatialConstraint#Component
+EquivalentComponent#equalsTo#EquivalentComponent

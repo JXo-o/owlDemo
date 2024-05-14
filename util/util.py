@@ -17,7 +17,7 @@ class MyUtil:
         return r_list
 
     @staticmethod
-    def print_label(ner_util, file_path=os.path.join("data", "input")):
+    def print_label(ner_util, file_path=os.path.join("data", "ner_input")):
         sentences = MyUtil.read_file(file_path)
         sentences = [
             sentence.split() if MyUtil.check_list_elements(sentences) else MyUtil.parse_sentence(ner_util, sentence) for
@@ -62,13 +62,18 @@ class MyUtil:
             except ValueError:
                 print("无效的输入格式，请输入三个值，用空格分隔。")
 
+        with open(os.path.join("data", "ner_label"), 'w', encoding='utf-8') as file:
+            for labels in label_list:
+                line = ' '.join(map(str, labels))
+                file.write(line + '\n')
+
         return label_list
 
     @staticmethod
     def parse_ontology(file_path, key):
         results = []
         start = False
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding='utf-8') as file:
             for line in file:
                 if line.startswith("###" + key):
                     start = True

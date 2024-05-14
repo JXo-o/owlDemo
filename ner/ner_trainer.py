@@ -15,7 +15,7 @@ class NERTrainer:
         train_data = []
         for item in data:
             text = item['text']
-            entities = [(entity['start'], entity['end'], entity['label']) for entity in item['entities']]
+            entities = [(entity['start'], entity['end'], entity['ner_label']) for entity in item['entities']]
             train_data.append((text, {'entities': entities}))
         return train_data
 

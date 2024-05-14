@@ -3,6 +3,10 @@ from ner.ner_util import NERUtil
 from ontology.data_insert import DataInsert
 from ontology.standard_builder import StandardOntology
 from ontology.convert_to_rule import ConvertToRule
+from ontology.bridge_builder import BridgeBuilder
+from ontology.ontology_builder import Ontology
+from rdflib import Namespace
+import os
 
 
 def main():
@@ -12,8 +16,12 @@ def main():
     label_list = MyUtil.correct_labels(MyUtil.print_label(ner_util))
 
     # 标准规范本体生成，示例
-    ontology = StandardOntology()
-    ontology.build_logic()
+    StandardOntology(os.path.join("data", "standard_ontology"),
+                     os.path.join("owl", "standard_ontology.owl")).build_logic()
+
+    # 桥梁本体生成，示例
+    BridgeBuilder(os.path.join("data", "bridge_ontology"),
+                  os.path.join("owl", "bridge_ontology.owl")).build_logic()
 
     # 知识图谱abox生成，示例
     data_insert = DataInsert()
@@ -22,17 +30,14 @@ def main():
     data_insert.save_file()
 
     # 本体与数据融合部分，示例
-    StandardOntology.merge_tbox_abox()
+    ns = Namespace(MyUtil.parse_ontology(os.path.join("data", "standard_ontology"), "NAMESPACE")[0])
+    kg = Ontology.merge_kg(os.path.join("owl", "standard_ontology.owl"),
+                           os.path.join("owl", "standard_data.owl"), namespace=ns)
+    Ontology.serialise(kg, os.path.join("owl", "standard_final.owl"), "xml")
 
-    # 知识图谱转Jena规则
+    # 知识图谱转Jena规则q
     ConvertToRule.convert()
 
 
-def main1():
-    # 标准规范本体生成，示例
-    ontology = StandardOntology()
-    ontology.build_logic()
-
-
 if __name__ == "__main__":
-    main1()
+    main()
