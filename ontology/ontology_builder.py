@@ -1,11 +1,11 @@
-from rdflib import Graph, Namespace, URIRef
+from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
 from util.util import MyUtil
 
 
 class Ontology:
 
-    def __init__(self, input_path):
+    def __init__(self, input_path=None):
 
         self.g = Graph()
         self.ns = None
@@ -42,6 +42,9 @@ class Ontology:
 
     def _wrap_str(self, key):
 
+        if isinstance(key, Literal):
+            return key
+
         if not key.startswith("http://"):
             key = URIRef(self.ns + key)
         return key
@@ -54,15 +57,22 @@ class Ontology:
 
         self.g.add((subject, predicate, obj))
 
+    def add_data(self, subject, predicate, obj):
+
+        subject = self._wrap_str(subject)
+        predicate = self._wrap_str(predicate)
+
+        self.g.add((subject, predicate, obj))
+
     def set_namespace(self, namespace):
 
         self.ns = Namespace(namespace)
         self._namespace_bind()
 
-    def parse_ontology(self, rpath, rformat):
+    def parse_ontology(self, rpath, rformat, namespace):
 
-        self.g.parse(rpath, rformat)
-        self.ns = Namespace(self.g.store.namespace(""))
+        self.g.parse(source=rpath, format=rformat)
+        self.ns = Namespace(namespace)
 
     def build_ontology(self):
 
@@ -88,6 +98,10 @@ class Ontology:
 
     def get_kg(self):
         return self.g
+
+    def save_file(self, save_url, save_format):
+        self.g.bind("", self.ns)
+        self.g.serialize(destination=save_url, format=save_format)
 
     @staticmethod
     def merge_kg(*paths, namespace, rformat="xml"):

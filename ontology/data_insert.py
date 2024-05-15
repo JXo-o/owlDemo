@@ -7,9 +7,9 @@ import os
 class DataInsert:
     def __init__(self):
 
-        self.g = Graph()
+        self.g = Graph().parse(source=os.path.join("owl", "standard_ontology.owl"), format="xml")
         self.ns = Namespace(MyUtil.parse_ontology(os.path.join("data", "standard_ontology"), "NAMESPACE")[0])
-        self.output_path = os.path.join("owl", "standard_data.owl")
+        self.output_path = os.path.join("owl", "standard.owl")
         self.output_format = "xml"
 
     # 插入不同类实例
@@ -63,8 +63,9 @@ class DataInsert:
 
     # 保存图谱abox
     def save_file(self):
-        self.g.serialize(self.output_path, self.output_format)
-        print("图谱abox数据部分已存至" + str(self.output_path))
+        self.g.bind("", self.ns)
+        self.g.serialize(destination=self.output_path, format=self.output_format)
+        print("标准规范图谱已存至" + str(self.output_path))
 
     def test(self):
         self.insert_data(["泄水孔", "直径", "不小于", "50mm"])

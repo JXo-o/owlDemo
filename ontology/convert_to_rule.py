@@ -5,7 +5,7 @@ import os
 class ConvertToRule:
 
     @staticmethod
-    def convert(kg_path=os.path.join("owl", "standard_final.owl")):
+    def convert(kg_path):
         kg = Graph()
         kg.parse(kg_path, format="xml")
 
@@ -32,7 +32,7 @@ class ConvertToRule:
 
                 for num_constraint in num_constraints:
                     num_constraint_name = ConvertToRule.get_name(num_constraint)
-                    num_operator = mapping[num_constraint_name]
+                    num_operator = mapping.get(num_constraint_name)
                     threshold = ConvertToRule.get_threshold(kg, num_constraint)[0]
                     rule.append(f"{num_operator}(?{p_flag} {threshold})")
                     # print(f"{num_operator}(?{p_flag} {threshold})")

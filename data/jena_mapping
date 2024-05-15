@@ -13,6 +13,8 @@
 不等于:notEqual
 不相等:notEqual
 不是:notEqual
+栏杆:IfcRailing
+高度:height
 equal:notEqual
 notEqual:equal
 le:greaterThan

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://example.org/bridge#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/bridge#equalsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/bridge#Component"/>
+    <rdfs:range rdf:resource="http://example.org/bridge#Component"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXikJl5A3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyiAGlN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXizHPqA3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#强度">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/bridge#混凝土"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/bridge#BridgeRelevant"/>
+    <equalsTo rdf:resource="http://example.org/bridge#IfcRailing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXiJ$BWA3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#高度">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/bridge#栏杆"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyWU5lY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyfXzYN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#泄水孔">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/bridge#BridgeRelevant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojymYpeN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyGiMsY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyS5lrY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyPlzLN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-nYNhsMXk6dvMbSekf8qGVI">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>0.99</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXiYysFA3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#混凝土">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/bridge#BridgeRelevant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyN7g8N4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyYX37N4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy0KprN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyIl7FN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy9hJnY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy_HwoY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#直径">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/bridge#泄水孔"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyLNQSN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyqxMXN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#BridgeRelevant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyL4imY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyBkCqN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#Component">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/bridge#InfoRelevant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#IfcRailing">
+    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy7LfxN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyU8WEN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyhtUkY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-FgNhsM_7ayvMbSekf8qGVI">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>0.99</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy2z72N4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXi8eIgA3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyouXpY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyxyGyN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#InfoRelevant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojydV8qY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+</rdf:RDF>
