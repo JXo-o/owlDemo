@@ -15,7 +15,10 @@ def main():
     ner_util = NERUtil()
     ner_util.train_model()
     label_list = MyUtil.correct_labels(
-        MyUtil.print_label(ner_util)
+        MyUtil.print_label(
+            ner_util,
+            os.path.join("data", "ner_label")
+        )
     )
 
     # 标准规范本体生成，示例
@@ -53,9 +56,12 @@ def main():
     KnowledgeGraphCompleter(
         os.path.join("model", "railing_test.ifc"),
         os.path.join("owl", "bridge_ontology.owl")
-    ).data_insert()
+    ).data_insert().save_file(
+        os.path.join("owl", "bridge.owl"),
+        "xml"
+    )
 
-    # 知识图谱转Jena规则q
+    # 知识图谱转Jena规则
     ConvertToRule.convert(
         os.path.join("owl", "standard.owl")
     )

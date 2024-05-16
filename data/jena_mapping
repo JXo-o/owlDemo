@@ -14,10 +14,11 @@
 不相等:notEqual
 不是:notEqual
 栏杆:IfcRailing
+顶帽:IfcBuildingElementProxy#TopCap
 高度:height
-equal:notEqual
-notEqual:equal
-le:greaterThan
-ge:lessThan
-lessThan:ge
-greaterThan:le
+厚度:height
+长度:length
+宽度:width
+直径:diameter
+强度:strength
+strength:FirstType

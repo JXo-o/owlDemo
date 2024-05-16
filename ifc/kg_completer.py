@@ -35,9 +35,12 @@ class KnowledgeGraphCompleter:
         for line in self.label_content:
             parts = line.strip().split()
             zh_name = parts[0]
-            ifc_name = self.mapping.get(zh_name)
-            self.ifc_parser.set_element_type(zh_name, ifc_name)
-            r_list = self.ifc_parser.process_elements(self.mapping.get(parts[1]))
+            ifc_name = self.mapping.get(zh_name).split("#")
+            self.ifc_parser.load_elements(zh_name, ifc_name)
+            key = self.mapping.get(parts[1])
+            if key and (mapped_value := self.mapping.get(key)):
+                key = f"property:{mapped_value}"
+            r_list = self.ifc_parser.get_dimensions(key)
 
             for res in r_list:
                 key, value = res.strip().split("#")
