@@ -1,5 +1,0 @@
-*.owl linguist-vendored
-*.ifc linguist-vendored
-data/** linguist-vendored
-owl/** linguist-vendored
-model/** linguist-vendored
