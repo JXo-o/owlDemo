@@ -4,162 +4,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-6E4ljJmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-hUPcOu_BtZ$wNimNvQ$lXF">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.40</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pZGfppmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPK04vmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPvDMHmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyhtUkY07DuxHGAFm3">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyLNQSN4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-FxVNaP_BtZ$wNimNvQ$lXF">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyL4imY07DuxHGAFm3">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-FgNhsM_7ayvMbSekf8qGVI">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>0.99</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-zRb8lw_BtZ$wNimNvQ$lXF">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXizHPqA3gJ1YTs0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.19</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#equalsTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/bridge#Component"/>
-    <rdfs:range rdf:resource="http://example.org/bridge#Component"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyWU5lY07DuxHGAFm3">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-Qtf1e0mjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXiYysFA3gJ1YTs0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.19</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-PINML$mjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#InfoRelevant">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
-    <rdfs:subClassOf rdf:resource="http://example.org/bridge#BridgeRelevant"/>
-    <equalsTo rdf:resource="http://example.org/bridge#IfcBuildingElementProxy#TopCap"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pZDt9wmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-97rt5BmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-ULc_T3mjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-6EiNv6mjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-hoccjbmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mr8TjtmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mrHbAUmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#IfcRailing">
-    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-hoEEvOmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXikJl5A3gJ1YTs0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.19</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-1X8IsL_BtZ$wNimNvQ$lXF">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-97T7XWmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-ayileamjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyfXzYN4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-63E41s_BtZ$wNimNvQ$lXF">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
@@ -170,50 +15,16 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-nYNhsMXk6dvMbSekf8qGVI">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>0.99</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-k1$MHGmjsjisqR2_gnC4J1">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-FxVNaP_BtZ$wNimNvQ$lXF">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mrxeGimjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mxTVG_mjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.80</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyiAGlN4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyouXpY07DuxHGAFm3">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-ho85_PmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#强度">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://example.org/bridge#顶帽"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pkJrDN_BtZ$wNimNvQ$lXF">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-IS57SnmjsjisqR2_gnC4J1">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mrxeGimjsjisqR2_gnC4J1">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
@@ -223,16 +34,65 @@
     <厚度>3.80</厚度>
     <强度>C35</强度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyGiMsY07DuxHGAFm3">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPfy_hmjsjisqR2_gnC4J1">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pZDt9wmjsjisqR2_gnC4J1">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pkAueImjsjisqR2_gnC4J1">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-RSsSIT_BtZ$wNimNvQ$lXF">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-hoEEvOmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-6EiNv6mjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyLNQSN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-hUPcOu_BtZ$wNimNvQ$lXF">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.40</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#equalsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/bridge#Component"/>
+    <rdfs:range rdf:resource="http://example.org/bridge#Component"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-SdgvxR_BtZ$wNimNvQ$lXF">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.40</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyWU5lY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-RSrVLjmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-PINML$mjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXikJl5A3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPfy_hmjsjisqR2_gnC4J1">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
@@ -241,19 +101,83 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyYX37N4HnDkAX0CTb">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mxTVG_mjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.80</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyN7g8N4HnDkAX0CTb">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#厚度">
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy9hJnY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-IS57SnmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-hoccjbmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXi8eIgA3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-RSNk5TmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojydV8qY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#强度">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="http://example.org/bridge#顶帽"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy_HwoY07DuxHGAFm3">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPoWq5mjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-ho85_PmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-6E4ljJmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#InfoRelevant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyL4imY07DuxHGAFm3">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXizHPqA3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy7LfxN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pkJrDN_BtZ$wNimNvQ$lXF">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#栏杆">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -261,39 +185,143 @@
     <rdfs:subClassOf rdf:resource="http://example.org/bridge#BridgeRelevant"/>
     <equalsTo rdf:resource="http://example.org/bridge#IfcRailing"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy_HwoY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPWrY4mjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#厚度">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/bridge#顶帽"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/bridge#BridgeRelevant"/>
+    <equalsTo rdf:resource="http://example.org/bridge#IfcBuildingElementProxy#TopCap"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXiYysFA3gJ1YTs0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.19</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojymYpeN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#顶帽-Smmh6y_BtZ$wNimNvQ$lXF">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
   </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-63E41s_BtZ$wNimNvQ$lXF">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-k1$MHGmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pZGfppmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-ayileamjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-97T7XWmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-1X8IsL_BtZ$wNimNvQ$lXF">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-PI__XomjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-Qtf1e0mjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-ULc_T3mjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-zRb8lw_BtZ$wNimNvQ$lXF">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyiAGlN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-97rt5BmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyYX37N4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mrHbAUmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-nYNhsMXk6dvMbSekf8qGVI">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>0.99</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyGiMsY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-pkAueImjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-FgNhsM_7ayvMbSekf8qGVI">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>0.99</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyxyGyN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPvDMHmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyfXzYN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy2z72N4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#顶帽-mguH$cmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPZGSVmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-PIlkACmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXiJ$BWA3gJ1YTs0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.19</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojydV8qY07DuxHGAFm3">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyU8WEN4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPWrY4mjsjisqR2_gnC4J1">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
@@ -306,81 +334,49 @@
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-RSsSIT_BtZ$wNimNvQ$lXF">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-RSrVLjmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy0KprN4HnDkAX0CTb">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyxyGyN4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPoWq5mjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXi8eIgA3gJ1YTs0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.19</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy7LfxN4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyS5lrY07DuxHGAFm3">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyqxMXN4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-RSNk5TmjsjisqR2_gnC4J1">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.00</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-SdgvxR_BtZ$wNimNvQ$lXF">
-    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
-    <厚度>3.40</厚度>
-    <强度>C35</强度>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#IfcBuildingElementProxy#TopCap">
-    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPm5vgmjsjisqR2_gnC4J1">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyN7g8N4HnDkAX0CTb">
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-ygIEXiJ$BWA3gJ1YTs0CTb">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
+    <高度>1.19</高度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#顶帽-PI__XomjsjisqR2_gnC4J1">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-PIlkACmjsjisqR2_gnC4J1">
     <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
     <厚度>3.00</厚度>
     <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#IfcBuildingElementProxy#TopCap">
+    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-mr8TjtmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyqxMXN4HnDkAX0CTb">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyPlzLN4HnDkAX0CTb">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy2z72N4HnDkAX0CTb">
-    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
-    <高度>1.26</高度>
+  <rdf:Description rdf:about="http://example.org/bridge#IfcRailing">
+    <rdf:type rdf:resource="http://example.org/bridge#Component"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojy9hJnY07DuxHGAFm3">
+  <rdf:Description rdf:about="http://example.org/bridge#顶帽-MPZGSVmjsjisqR2_gnC4J1">
+    <rdf:type rdf:resource="http://example.org/bridge#顶帽"/>
+    <厚度>3.00</厚度>
+    <强度>C35</强度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyU8WEN4HnDkAX0CTb">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
   </rdf:Description>
@@ -388,7 +384,11 @@
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojymYpeN4HnDkAX0CTb">
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyhtUkY07DuxHGAFm3">
+    <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
+    <高度>1.26</高度>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/bridge#栏杆-gUxojyS5lrY07DuxHGAFm3">
     <rdf:type rdf:resource="http://example.org/bridge#栏杆"/>
     <高度>1.26</高度>
   </rdf:Description>

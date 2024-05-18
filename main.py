@@ -28,13 +28,13 @@ def main(ifc_file_path):
     # 标准规范本体生成，示例
     StandardOntology(
         os.path.join("input_data", "standard_ontology"),
-        os.path.join("owl", "standard_ontology.owl")
+        os.path.join("ontology_files", "standard_ontology.owl")
     ).build_logic()
 
     # 桥梁本体生成，示例
     BridgeBuilder(
         os.path.join("input_data", "bridge_ontology"),
-        os.path.join("owl", "bridge_ontology.owl")
+        os.path.join("ontology_files", "bridge_ontology.owl")
     ).build_logic()
 
     # 知识图谱数据插入，示例
@@ -59,28 +59,28 @@ def main(ifc_file_path):
     # 解析IFC，在桥梁图谱中添加数据
     KnowledgeGraphCompleter(
         ifc_file_path,
-        os.path.join("owl", "bridge_ontology.owl")
+        os.path.join("ontology_files", "bridge_ontology.owl")
     ).data_insert().save_file(
-        os.path.join("owl", "bridge.owl"),
+        os.path.join("ontology_files", "bridge.owl"),
         "xml"
     )
 
     # 知识图谱转Jena规则
     ConvertToRule.convert(
-        os.path.join("owl", "standard.owl")
+        os.path.join("ontology_files", "standard.owl")
     )
     
     print("#####SUCCESSFUL#####")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process IFC file path")
-    parser.add_argument("ifc_file_path", type=str, nargs='?', help="Path to the IFC file")
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser(description="Process IFC file path")
+    # parser.add_argument("ifc_file_path", type=str, nargs='?', help="Path to the IFC file")
+    # args = parser.parse_args()
+    #
+    # if not args.ifc_file_path:
+    #     print("Error: Please provide the path to the IFC file.")
+    #     parser.print_help()
+    #     sys.exit(1)
 
-    if not args.ifc_file_path:
-        print("Error: Please provide the path to the IFC file.")
-        parser.print_help()
-        sys.exit(1)
-
-    main(args.ifc_file_path)
+    main(os.path.join("ifc_models", "railing_test.ifc"))
