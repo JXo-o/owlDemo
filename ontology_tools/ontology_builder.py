@@ -1,6 +1,6 @@
 from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
-from util.util import MyUtil
+from utility_scripts.util import MyUtil
 
 
 class Ontology:

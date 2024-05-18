@@ -1,6 +1,6 @@
 from rdflib import Graph, Namespace, Literal, URIRef
 from rdflib.namespace import FOAF, OWL, RDF, RDFS, XSD
-from util.util import MyUtil
+from utility_scripts.util import MyUtil
 import os
 
 
@@ -8,7 +8,7 @@ class DataInsert:
     def __init__(self):
 
         self.g = Graph().parse(source=os.path.join("owl", "standard_ontology.owl"), format="xml")
-        self.ns = Namespace(MyUtil.parse_ontology(os.path.join("data", "standard_ontology"), "NAMESPACE")[0])
+        self.ns = Namespace(MyUtil.parse_ontology(os.path.join("input_data", "standard_ontology"), "NAMESPACE")[0])
         self.output_path = os.path.join("owl", "standard.owl")
         self.output_format = "xml"
 

@@ -1,5 +1,5 @@
-from util.util import MyUtil
-from ontology.ontology_builder import Ontology
+from utility_scripts.util import MyUtil
+from ontology_tools.ontology_builder import Ontology
 import datetime
 import os
 
@@ -8,8 +8,8 @@ class BridgeBuilder:
 
     def __init__(self, input_path, output_path, output_format="xml"):
 
-        self.template_path = os.path.join("data", "bridge_template")
-        self.label_path = os.path.join("data", "ner_label")
+        self.template_path = os.path.join("input_data", "bridge_template")
+        self.label_path = os.path.join("input_data", "ner_label")
         self.input_path = input_path
         self.output_path = output_path
         self.output_format = output_format
@@ -45,7 +45,7 @@ class BridgeBuilder:
             "PROPERTIES": properties
         }
 
-        with open(os.path.join("data", "bridge_template"), 'r', encoding='utf-8') as file:
+        with open(os.path.join("input_data", "bridge_template"), 'r', encoding='utf-8') as file:
             lines = file.readlines()
 
         new_lines = []

@@ -22,8 +22,8 @@ class NERTrainer:
     def train_model(self, iterations=100):
         train_data = self.load_train_data()
         nlp = spacy.blank("zh")
-        if "ner" not in nlp.pipe_names:
-            ner = nlp.add_pipe("ner", last=True)
+        if "ner_tools" not in nlp.pipe_names:
+            ner = nlp.add_pipe("ner_tools", last=True)
 
         for label in ["ENTITY", "PROPERTY", "OPERATOR", "VALUE"]:
             ner.add_label(label)

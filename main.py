@@ -1,35 +1,39 @@
-from util.util import MyUtil
-from ner.ner_util import NERUtil
-from ontology.data_insert import DataInsert
-from ontology.standard_builder import StandardOntology
-from ontology.convert_to_rule import ConvertToRule
-from ontology.bridge_builder import BridgeBuilder
-from ontology.ontology_builder import Ontology
-from ifc.kg_completer import KnowledgeGraphCompleter
-from rdflib import Namespace
+from utility_scripts.util import MyUtil
+from ontology_tools.data_insert import DataInsert
+from ontology_tools.standard_builder import StandardOntology
+from ontology_tools.convert_to_rule import ConvertToRule
+from ontology_tools.bridge_builder import BridgeBuilder
+from ifc_tools.kg_completer import KnowledgeGraphCompleter
 import os
+import argparse
+import sys
 
 
-def main():
-    # 命名实体识别部分，示例
-    ner_util = NERUtil()
-    ner_util.train_model()
-    label_list = MyUtil.correct_labels(
-        MyUtil.print_label(
-            ner_util,
-            os.path.join("data", "ner_label")
-        )
-    )
+def main(ifc_file_path):
+    # # 命名实体识别部分，示例
+    # ner_util = NERUtil()
+    # ner_util.train_model()
+    # label_list = MyUtil.correct_labels(
+    #     MyUtil.print_label(
+    #         ner_util,
+    #         os.path.join("input_data", "ner_label")
+    #     )
+    # )
+
+    label_list = MyUtil.read_file(os.path.join("input_data", "ner_label"))
+    label_list = [
+        label.split() for label in label_list
+    ]
 
     # 标准规范本体生成，示例
     StandardOntology(
-        os.path.join("data", "standard_ontology"),
+        os.path.join("input_data", "standard_ontology"),
         os.path.join("owl", "standard_ontology.owl")
     ).build_logic()
 
     # 桥梁本体生成，示例
     BridgeBuilder(
-        os.path.join("data", "bridge_ontology"),
+        os.path.join("input_data", "bridge_ontology"),
         os.path.join("owl", "bridge_ontology.owl")
     ).build_logic()
 
@@ -45,7 +49,7 @@ def main():
     #     os.path.join("owl", "standard_data.owl"),
     #     namespace=Namespace(
     #         MyUtil.parse_ontology(
-    #             os.path.join("data", "standard_ontology"),
+    #             os.path.join("input_data", "standard_ontology"),
     #             "NAMESPACE"
     #         )[0]
     #     )
@@ -54,7 +58,7 @@ def main():
 
     # 解析IFC，在桥梁图谱中添加数据
     KnowledgeGraphCompleter(
-        os.path.join("model", "railing_test.ifc"),
+        ifc_file_path,
         os.path.join("owl", "bridge_ontology.owl")
     ).data_insert().save_file(
         os.path.join("owl", "bridge.owl"),
@@ -65,7 +69,18 @@ def main():
     ConvertToRule.convert(
         os.path.join("owl", "standard.owl")
     )
+    
+    print("#####SUCCESSFUL#####")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Process IFC file path")
+    parser.add_argument("ifc_file_path", type=str, nargs='?', help="Path to the IFC file")
+    args = parser.parse_args()
+
+    if not args.ifc_file_path:
+        print("Error: Please provide the path to the IFC file.")
+        parser.print_help()
+        sys.exit(1)
+
+    main(args.ifc_file_path)

@@ -1,7 +1,7 @@
-from ontology.convert_to_rule import ConvertToRule
-from ontology.ontology_builder import Ontology
-from util.util import MyUtil
-from ifc.ifc_parser import IFCParser
+from ontology_tools.convert_to_rule import ConvertToRule
+from ontology_tools.ontology_builder import Ontology
+from utility_scripts.util import MyUtil
+from ifc_tools.ifc_parser import IFCParser
 from rdflib import Literal
 from rdflib.namespace import RDF
 import os
@@ -15,9 +15,9 @@ class KnowledgeGraphCompleter:
         self.ontology.parse_ontology(
             kg_path,
             kg_format,
-            MyUtil.parse_ontology(os.path.join("data", "bridge_ontology"), "NAMESPACE")[0]
+            MyUtil.parse_ontology(os.path.join("input_data", "bridge_ontology"), "NAMESPACE")[0]
         )
-        self.label_content = MyUtil.read_file(os.path.join("data", "ner_label"))
+        self.label_content = MyUtil.read_file(os.path.join("input_data", "ner_label"))
         self.ifc_parser = IFCParser(ifc_path)
         self._init()
 
@@ -31,7 +31,7 @@ class KnowledgeGraphCompleter:
                 self.ontology.add_triple(parts[0], "equalsTo", ifc_name)
 
     def data_insert(self):
-        # ConvertToRule.get_instances(self.ontology.get_kg(), self.ontology.get_ns().Component)
+        # ConvertToRule.get_instances(self.ontology_tools.get_kg(), self.ontology_tools.get_ns().Component)
         for line in self.label_content:
             parts = line.strip().split()
             zh_name = parts[0]

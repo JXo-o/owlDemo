@@ -17,11 +17,12 @@ class MyUtil:
         return r_list
 
     @staticmethod
-    def print_label(ner_util, file_path=os.path.join("data", "ner_input")):
+    def print_label(ner_util, file_path=os.path.join("input_data", "ner_input")):
         sentences = MyUtil.read_file(file_path)
         sentences = [
             sentence.split() if MyUtil.check_list_elements(sentences) else MyUtil.parse_sentence(ner_util, sentence) for
-            sentence in sentences]
+            sentence in sentences
+        ]
         print("标签如下：（依次为构件、属性、约束关系、临界值）")
         print(sentences)
         return sentences
@@ -62,7 +63,7 @@ class MyUtil:
             except ValueError:
                 print("无效的输入格式，请输入三个值，用空格分隔。")
 
-        with open(os.path.join("data", "ner_label"), 'w', encoding='utf-8') as file:
+        with open(os.path.join("input_data", "ner_label"), 'w', encoding='utf-8') as file:
             for labels in label_list:
                 line = ' '.join(map(str, labels))
                 file.write(line + '\n')
